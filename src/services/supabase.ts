@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 import type { UserProfile, GameState } from '../types/supabase';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.VUE_APP_SUPABASE_URL;
+const supabaseKey = process.env.VUE_APP_SUPABASE_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
 

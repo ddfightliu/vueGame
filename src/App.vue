@@ -1,5 +1,6 @@
 <template>
   <router-view></router-view>
+  app page
 </template>
 
 <script setup lang="ts">
